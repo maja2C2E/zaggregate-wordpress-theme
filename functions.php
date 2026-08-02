@@ -37,6 +37,7 @@ add_action('customize_register', 'zaggregate_customize_register');
 
 function zaggregate_virtual_pages() {
     return [
+        'zaggregate-project' => ['template' => 'front-page.php', 'title' => 'ZAGGREGATE Project | Zagreb x Lausanne'],
         'project-overview' => ['template' => 'page-project-overview.php', 'title' => 'Project Overview | ZAGGREGATE'],
         'research-programme' => ['template' => 'page-research-programme.php', 'title' => 'Research Programme | ZAGGREGATE'],
         'team-partners' => ['template' => 'page-team-partners.php', 'title' => 'Team & Partners | ZAGGREGATE'],
@@ -106,7 +107,7 @@ function zaggregate_render_virtual_page_directly() {
 add_action('template_redirect', 'zaggregate_render_virtual_page_directly', 0);
 
 function zaggregate_maybe_flush_virtual_routes() {
-    $route_version = '2';
+    $route_version = '3';
     if (get_option('zaggregate_virtual_route_version') !== $route_version) {
         zaggregate_register_virtual_routes();
         flush_rewrite_rules(false);
@@ -128,6 +129,10 @@ function zaggregate_social_metadata() {
     $url = home_url('/');
 
     $profiles = [
+        'zaggregate-project' => [
+            'title' => $default_title,
+            'description' => $default_description,
+        ],
         'project-overview' => [
             'title' => 'Project Overview | ZAGGREGATE',
             'description' => 'Discover how ZAGGREGATE combines field evidence, experiments and numerical modelling to develop retrofit strategies for historic masonry building aggregates in Zagreb.',
