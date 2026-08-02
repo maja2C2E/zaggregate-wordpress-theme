@@ -114,3 +114,77 @@ function zaggregate_maybe_flush_virtual_routes() {
     }
 }
 add_action('admin_init', 'zaggregate_maybe_flush_virtual_routes');
+
+/**
+ * Provide link-preview metadata for social networks and messaging apps.
+ */
+function zaggregate_social_metadata() {
+    if (is_admin()) return;
+
+    $default_title = 'ZAGGREGATE — Developing Retrofit Strategies for Historical Masonry Building Aggregates in Zagreb';
+    $default_description = 'A Zagreb–Lausanne research project developing evidence-based, heritage-compatible strategies to reduce seismic risk across entire historic masonry building rows.';
+    $title = $default_title;
+    $description = $default_description;
+    $url = home_url('/');
+
+    $profiles = [
+        'project-overview' => [
+            'title' => 'Project Overview | ZAGGREGATE',
+            'description' => 'Discover how ZAGGREGATE combines field evidence, experiments and numerical modelling to develop retrofit strategies for historic masonry building aggregates in Zagreb.',
+        ],
+        'research-programme' => [
+            'title' => 'Research Programme | ZAGGREGATE',
+            'description' => 'Explore the six interconnected work packages, from building surveys and material testing to aggregate-scale modelling, vulnerability assessment and retrofit guidance.',
+        ],
+        'team-partners' => [
+            'title' => 'Team & Partners | ZAGGREGATE',
+            'description' => 'Meet the Zagreb and Lausanne research teams, project leaders, coordinators, partner institutions and international scientific network behind ZAGGREGATE.',
+        ],
+        'open-positions' => [
+            'title' => 'Open Positions | ZAGGREGATE',
+            'description' => 'Explore doctoral and postdoctoral opportunities with the ZAGGREGATE project at the University of Zagreb and EPFL in Lausanne.',
+        ],
+        'university-of-zagreb-positions' => [
+            'title' => 'University of Zagreb Open Positions | ZAGGREGATE',
+            'description' => 'English-language application guidance for international candidates applying for ZAGGREGATE doctoral and postdoctoral positions at the University of Zagreb.',
+        ],
+    ];
+
+    $virtual_page = zaggregate_current_virtual_page();
+    if ($virtual_page && isset($profiles[$virtual_page['slug']])) {
+        $profile = $profiles[$virtual_page['slug']];
+        $title = $profile['title'];
+        $description = $profile['description'];
+        $url = home_url('/' . $virtual_page['slug'] . '/');
+    } elseif (!is_front_page() && is_singular()) {
+        $title = wp_get_document_title();
+        $excerpt = get_the_excerpt();
+        if ($excerpt) $description = wp_strip_all_tags($excerpt);
+        $canonical = wp_get_canonical_url();
+        if ($canonical) $url = $canonical;
+    }
+
+    $image = get_template_directory_uri() . '/assets/images/project/zaggregate-project-visual.png';
+    $image_alt = 'ZAGGREGATE project — Zagreb and Lausanne collaboration on seismic retrofit of historic masonry building aggregates';
+
+    echo "\n<!-- ZAGGREGATE social sharing metadata -->\n";
+    printf("<meta name=\"description\" content=\"%s\">\n", esc_attr($description));
+    echo "<meta property=\"og:locale\" content=\"en_US\">\n";
+    echo "<meta property=\"og:type\" content=\"website\">\n";
+    echo "<meta property=\"og:site_name\" content=\"ZAGGREGATE Project\">\n";
+    printf("<meta property=\"og:title\" content=\"%s\">\n", esc_attr($title));
+    printf("<meta property=\"og:description\" content=\"%s\">\n", esc_attr($description));
+    printf("<meta property=\"og:url\" content=\"%s\">\n", esc_url($url));
+    printf("<meta property=\"og:image\" content=\"%s\">\n", esc_url($image));
+    printf("<meta property=\"og:image:secure_url\" content=\"%s\">\n", esc_url($image));
+    echo "<meta property=\"og:image:type\" content=\"image/png\">\n";
+    echo "<meta property=\"og:image:width\" content=\"1949\">\n";
+    echo "<meta property=\"og:image:height\" content=\"1012\">\n";
+    printf("<meta property=\"og:image:alt\" content=\"%s\">\n", esc_attr($image_alt));
+    echo "<meta name=\"twitter:card\" content=\"summary_large_image\">\n";
+    printf("<meta name=\"twitter:title\" content=\"%s\">\n", esc_attr($title));
+    printf("<meta name=\"twitter:description\" content=\"%s\">\n", esc_attr($description));
+    printf("<meta name=\"twitter:image\" content=\"%s\">\n", esc_url($image));
+    printf("<meta name=\"twitter:image:alt\" content=\"%s\">\n", esc_attr($image_alt));
+}
+add_action('wp_head', 'zaggregate_social_metadata', 5);
