@@ -164,7 +164,7 @@ function zaggregate_social_metadata() {
         if ($canonical) $url = $canonical;
     }
 
-    $image = get_template_directory_uri() . '/assets/images/project/zaggregate-social-preview-1200x630.jpg';
+    $image = get_template_directory_uri() . '/assets/images/project/zaggregate-social-preview-1500x630.jpg';
     $image_alt = 'ZAGGREGATE project — Zagreb and Lausanne collaboration on seismic retrofit of historic masonry building aggregates';
 
     echo "\n<!-- ZAGGREGATE social sharing metadata -->\n";
@@ -178,7 +178,7 @@ function zaggregate_social_metadata() {
     printf("<meta property=\"og:image\" content=\"%s\">\n", esc_url($image));
     printf("<meta property=\"og:image:secure_url\" content=\"%s\">\n", esc_url($image));
     echo "<meta property=\"og:image:type\" content=\"image/jpeg\">\n";
-    echo "<meta property=\"og:image:width\" content=\"1200\">\n";
+    echo "<meta property=\"og:image:width\" content=\"1500\">\n";
     echo "<meta property=\"og:image:height\" content=\"630\">\n";
     printf("<meta property=\"og:image:alt\" content=\"%s\">\n", esc_attr($image_alt));
     echo "<meta name=\"twitter:card\" content=\"summary_large_image\">\n";
