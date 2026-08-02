@@ -1,0 +1,14 @@
+# Local analysis and prototype files
+.analysis-temp/
+ZAGGREGATE_homepage_prototype.html
+
+# Windows metadata
+*Zone.Identifier
+Thumbs.db
+Desktop.ini
+
+# Generated archives and temporary files
+*.zip
+*.tmp
+*.bak
+~*
