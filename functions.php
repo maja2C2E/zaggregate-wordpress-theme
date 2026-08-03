@@ -43,6 +43,7 @@ function zaggregate_virtual_pages() {
         'team-partners' => ['template' => 'page-team-partners.php', 'title' => 'Team & Partners | ZAGGREGATE'],
         'open-positions' => ['template' => 'page-open-positions.php', 'title' => 'Open Positions | ZAGGREGATE'],
         'university-of-zagreb-positions' => ['template' => 'page-university-of-zagreb-positions.php', 'title' => 'University of Zagreb Open Positions | ZAGGREGATE'],
+        'project-presentation-25-may-2026' => ['template' => 'page-project-presentation-event.php', 'title' => 'Presentation of the ZAGGREGATE Project | 25 May 2026'],
     ];
 }
 
@@ -107,7 +108,7 @@ function zaggregate_render_virtual_page_directly() {
 add_action('template_redirect', 'zaggregate_render_virtual_page_directly', 0);
 
 function zaggregate_maybe_flush_virtual_routes() {
-    $route_version = '3';
+    $route_version = '4';
     if (get_option('zaggregate_virtual_route_version') !== $route_version) {
         zaggregate_register_virtual_routes();
         flush_rewrite_rules(false);
@@ -127,6 +128,11 @@ function zaggregate_social_metadata() {
     $title = $default_title;
     $description = $default_description;
     $url = home_url('/');
+    $image = get_template_directory_uri() . '/assets/images/project/zaggregate-social-preview-1500x630.jpg';
+    $image_type = 'image/jpeg';
+    $image_width = '1500';
+    $image_height = '630';
+    $image_alt = 'ZAGGREGATE project — Zagreb and Lausanne collaboration on seismic retrofit of historic masonry building aggregates';
 
     $profiles = [
         'zaggregate-project' => [
@@ -153,6 +159,15 @@ function zaggregate_social_metadata() {
             'title' => 'University of Zagreb Open Positions | ZAGGREGATE',
             'description' => 'English-language application guidance for international candidates applying for ZAGGREGATE doctoral and postdoctoral positions at the University of Zagreb.',
         ],
+        'project-presentation-25-may-2026' => [
+            'title' => 'Presentation of the ZAGGREGATE Project | 25 May 2026',
+            'description' => 'The ZAGGREGATE project was presented at the University of Zagreb Faculty of Civil Engineering, bringing together government, diplomatic, academic and professional representatives.',
+            'image' => get_template_directory_uri() . '/assets/media/project-presentation-2026/zaggregate-project-presentation-visual.png',
+            'image_type' => 'image/png',
+            'image_width' => '1920',
+            'image_height' => '1080',
+            'image_alt' => 'Visual for the presentation of the ZAGGREGATE project held on 25 May 2026',
+        ],
     ];
 
     $virtual_page = zaggregate_current_virtual_page();
@@ -161,6 +176,11 @@ function zaggregate_social_metadata() {
         $title = $profile['title'];
         $description = $profile['description'];
         $url = home_url('/' . $virtual_page['slug'] . '/');
+        if (isset($profile['image'])) $image = $profile['image'];
+        if (isset($profile['image_type'])) $image_type = $profile['image_type'];
+        if (isset($profile['image_width'])) $image_width = $profile['image_width'];
+        if (isset($profile['image_height'])) $image_height = $profile['image_height'];
+        if (isset($profile['image_alt'])) $image_alt = $profile['image_alt'];
     } elseif (!is_front_page() && is_singular()) {
         $title = wp_get_document_title();
         $excerpt = get_the_excerpt();
@@ -168,9 +188,6 @@ function zaggregate_social_metadata() {
         $canonical = wp_get_canonical_url();
         if ($canonical) $url = $canonical;
     }
-
-    $image = get_template_directory_uri() . '/assets/images/project/zaggregate-social-preview-1500x630.jpg';
-    $image_alt = 'ZAGGREGATE project — Zagreb and Lausanne collaboration on seismic retrofit of historic masonry building aggregates';
 
     echo "\n<!-- ZAGGREGATE social sharing metadata -->\n";
     printf("<meta name=\"description\" content=\"%s\">\n", esc_attr($description));
@@ -182,9 +199,9 @@ function zaggregate_social_metadata() {
     printf("<meta property=\"og:url\" content=\"%s\">\n", esc_url($url));
     printf("<meta property=\"og:image\" content=\"%s\">\n", esc_url($image));
     printf("<meta property=\"og:image:secure_url\" content=\"%s\">\n", esc_url($image));
-    echo "<meta property=\"og:image:type\" content=\"image/jpeg\">\n";
-    echo "<meta property=\"og:image:width\" content=\"1500\">\n";
-    echo "<meta property=\"og:image:height\" content=\"630\">\n";
+    printf("<meta property=\"og:image:type\" content=\"%s\">\n", esc_attr($image_type));
+    printf("<meta property=\"og:image:width\" content=\"%s\">\n", esc_attr($image_width));
+    printf("<meta property=\"og:image:height\" content=\"%s\">\n", esc_attr($image_height));
     printf("<meta property=\"og:image:alt\" content=\"%s\">\n", esc_attr($image_alt));
     echo "<meta name=\"twitter:card\" content=\"summary_large_image\">\n";
     printf("<meta name=\"twitter:title\" content=\"%s\">\n", esc_attr($title));
