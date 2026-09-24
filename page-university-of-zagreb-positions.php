@@ -11,7 +11,7 @@ $official_url = 'https://www.grad.unizg.hr/novosti_i_objave/natjecaji?@=2b5z6#ne
         <div>
           <span class="eyebrow">University of Zagreb · Croatia</span>
           <h1>Open research positions in the ZAGGREGATE project</h1>
-          <p class="positions-lead">The University of Zagreb Faculty of Civil Engineering is currently recruiting four doctoral researchers and one postdoctoral researcher for Postdoc 3. The new call adds one PhD position whose precise research topic will be defined with the selected candidate and supervisory team.</p>
+          <p class="positions-lead">The University of Zagreb Faculty of Civil Engineering is currently recruiting four doctoral researchers and one postdoctoral researcher for Postdoc 3. The new PhD 6 position focuses on damage-informed seismic assessment of historic masonry buildings under repeated earthquake actions.</p>
           <div class="positions-hero-actions"><a class="btn btn-primary" href="#how-to-apply">How to apply ↓</a><a class="btn btn-secondary" target="_blank" rel="noopener" href="<?php echo esc_url($official_url); ?>">Official Croatian call ↗</a></div>
         </div>
         <div class="positions-keyfacts" aria-label="Key recruitment facts">
@@ -53,7 +53,14 @@ $official_url = 'https://www.grad.unizg.hr/novosti_i_objave/natjecaji?@=2b5z6#ne
         <article class="role-profile"><span>PhD 4</span><h4>Out-of-plane demand and capacity</h4><ul><li>Floor spectra and aggregate-specific seismic demand</li><li>DEM/NSCD modelling of interacting building rows</li><li>Damage metrics, fragility functions and practical checks</li><li>An open engineering tool for gables, parapets and façades</li></ul></article>
         <article class="role-profile"><span>PhD 5</span><h4>Eurocode 8 and shake-table benchmarking</h4><ul><li>Half-scale shake-table test planning and execution</li><li>Blind prediction and post-diction benchmark</li><li>EC8 Part 3 evaluation and recommendations</li><li>An open shake-table dataset with processing scripts</li></ul></article>
       </div>
-      <aside class="upcoming-call open-call additional-phd-call"><div><span>Applications open · Additional PhD position</span><h3>Research topic to be defined with the selected candidate</h3><p><strong>Official position title:</strong> Project Associate 3 / Researcher - PhD Candidate. The research will fall within the ZAGGREGATE programme and may combine work on historic masonry buildings, numerical modelling, experimental or field investigations, damage analysis, seismic vulnerability and retrofit. The precise doctoral topic and tasks will be agreed with the selected candidate and supervisory team.</p></div><strong>Deadline · 15 Oct</strong></aside>
+      <section class="additional-phd-profile" aria-labelledby="phd-6-title">
+        <div class="additional-phd-head"><div><span>Currently open · PhD 6 · Zagreb</span><h3 id="phd-6-title">Damage-informed seismic assessment of historic masonry buildings under repeated earthquake actions</h3><p><strong>Official position title:</strong> Project Associate 3 / Researcher - PhD Candidate. The final research scope will be refined with the selected candidate and supervisory team to form a focused four-year doctoral project.</p></div><div><strong>15 October</strong><span>Application deadline · 2026</span></div></div>
+        <div class="additional-phd-grid">
+          <article><h4>Research questions</h4><ul><li>Introduce observed earthquake damage into numerical models without reproducing the complete previous earthquake history</li><li>Relate observable damage and changes in dynamic properties to stiffness, strength, connections and structural mechanisms</li><li>Assess how pre-existing damage affects subsequent response, damage progression and residual capacity</li><li>Compare cumulative damage under earthquake sequences with analyses based on individual ground motions</li><li>Determine when simplified pre-damaged models reproduce the subsequent response with sufficient accuracy</li></ul></article>
+          <article><h4>Methods and case studies</h4><ul><li>Nonlinear seismic analysis of existing masonry structures</li><li>Ground-motion and earthquake-sequence selection</li><li>Damage and residual-capacity assessment</li><li>Probabilistic and statistical analysis</li><li>Earthquake-damaged buildings in Zagreb and, where suitable, Petrinja earthquake sequences</li></ul></article>
+          <article><h4>Expected outcomes and project links</h4><ul><li>A methodology for damage-informed seismic assessment</li><li>Simplified rules for introducing pre-existing damage into engineering models</li><li>Research papers on cumulative damage, residual capacity and simplified pre-damaged modelling</li><li>Close links with PhD 1 for observed damage data, PhD 5 for shake-table damage progression and Postdoc 2 for fragility and risk applications</li></ul></article>
+        </div>
+      </section>
     </div>
   </section>
 
