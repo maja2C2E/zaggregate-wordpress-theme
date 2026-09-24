@@ -11,11 +11,11 @@ $official_url = 'https://www.grad.unizg.hr/novosti_i_objave/natjecaji?@=2b5z6#ne
         <div>
           <span class="eyebrow">University of Zagreb · Croatia</span>
           <h1>Open research positions in the ZAGGREGATE project</h1>
-          <p class="positions-lead">The University of Zagreb Faculty of Civil Engineering is currently recruiting three doctoral researchers and one postdoctoral researcher for Postdoc 3. Earlier calls for Postdoc 1 and Postdoc 2 are closed and remain listed below for reference.</p>
+          <p class="positions-lead">The University of Zagreb Faculty of Civil Engineering is currently recruiting four doctoral researchers and one postdoctoral researcher for Postdoc 3. The new call adds one PhD position whose precise research topic will be defined with the selected candidate and supervisory team.</p>
           <div class="positions-hero-actions"><a class="btn btn-primary" href="#how-to-apply">How to apply ↓</a><a class="btn btn-secondary" target="_blank" rel="noopener" href="<?php echo esc_url($official_url); ?>">Official Croatian call ↗</a></div>
         </div>
         <div class="positions-keyfacts" aria-label="Key recruitment facts">
-          <div><strong>3</strong><span>PhD positions</span><small>Deadline: 30 September 2026</small></div>
+          <div><strong>4</strong><span>PhD positions</span><small>3 close 30 September · 1 closes 15 October</small></div>
           <div><strong>Postdoc 3</strong><span>Currently open</span><small>Deadline: 15 October 2026</small></div>
           <div><strong>Zagreb</strong><span>Primary workplace</span><small>International research exchanges included</small></div>
         </div>
@@ -23,7 +23,7 @@ $official_url = 'https://www.grad.unizg.hr/novosti_i_objave/natjecaji?@=2b5z6#ne
     </div>
   </section>
 
-  <nav class="positions-page-nav" aria-label="Open positions page navigation"><div class="container"><a href="#overview">Start here</a><a href="#phd-positions">PhD positions <span>30 Sep</span></a><a href="#postdoc-positions">Postdoc position <span>15 Oct</span></a><a href="#how-to-apply">How to apply</a><a href="#submit-application">Submit &amp; contact</a></div></nav>
+  <nav class="positions-page-nav" aria-label="Open positions page navigation"><div class="container"><a href="#overview">Start here</a><a href="#phd-positions">PhD positions <span>30 Sep / 15 Oct</span></a><a href="#postdoc-positions">Postdoc 3 <span>15 Oct</span></a><a href="#how-to-apply">How to apply</a><a href="#submit-application">Submit &amp; contact</a></div></nav>
 
   <section class="positions-essentials" id="overview">
     <div class="container">
@@ -40,7 +40,7 @@ $official_url = 'https://www.grad.unizg.hr/novosti_i_objave/natjecaji?@=2b5z6#ne
 
   <section class="section job-details" id="phd-positions">
     <div class="container">
-      <div class="job-group-head"><div><span class="eyebrow">PhD positions · University of Zagreb</span><h2>Project Associate 3 / Researcher - PhD Candidate</h2><p>Three researchers will develop doctoral work within complementary parts of the ZAGGREGATE programme.</p></div><div class="deadline-card"><span>Application deadline</span><strong>30 September</strong><small>2026</small></div></div>
+      <div class="job-group-head"><div><span class="eyebrow">Original PhD call · University of Zagreb</span><h2>Project Associate 3 / Researcher - PhD Candidate</h2><p>Three researchers will develop doctoral work within complementary parts of the ZAGGREGATE programme.</p></div><div class="deadline-card"><span>Application deadline</span><strong>30 September</strong><small>2026</small></div></div>
       <div class="job-columns">
         <article class="requirements-card"><h3>Required profile</h3><ul><li>An MSc degree or equivalent in civil engineering or a related technical field</li><li>Eligibility for enrolment in a doctoral programme</li><li>Excellent spoken and written English</li><li>Ability to work independently and within an international research team</li><li>Willingness to learn new methods, software and research approaches</li><li>Willingness to undertake a study and/or research exchange outside Croatia for up to one year, at EPFL and/or another international partner institution</li><li>Applicants must not already hold a doctoral degree</li></ul></article>
         <article class="requirements-card"><h3>Preferred experience</h3><ul><li>Earthquake engineering, structural dynamics or historic masonry buildings</li><li>Structural numerical modelling and nonlinear analysis</li><li>Structural-analysis, programming or data-processing tools</li><li>Experimental, field or non-destructive testing</li><li>Previous research, publications, awards or conference contributions</li></ul></article>
@@ -53,6 +53,7 @@ $official_url = 'https://www.grad.unizg.hr/novosti_i_objave/natjecaji?@=2b5z6#ne
         <article class="role-profile"><span>PhD 4</span><h4>Out-of-plane demand and capacity</h4><ul><li>Floor spectra and aggregate-specific seismic demand</li><li>DEM/NSCD modelling of interacting building rows</li><li>Damage metrics, fragility functions and practical checks</li><li>An open engineering tool for gables, parapets and façades</li></ul></article>
         <article class="role-profile"><span>PhD 5</span><h4>Eurocode 8 and shake-table benchmarking</h4><ul><li>Half-scale shake-table test planning and execution</li><li>Blind prediction and post-diction benchmark</li><li>EC8 Part 3 evaluation and recommendations</li><li>An open shake-table dataset with processing scripts</li></ul></article>
       </div>
+      <aside class="upcoming-call open-call additional-phd-call"><div><span>Applications open · Additional PhD position</span><h3>Research topic to be defined with the selected candidate</h3><p><strong>Official position title:</strong> Project Associate 3 / Researcher - PhD Candidate. The research will fall within the ZAGGREGATE programme and may combine work on historic masonry buildings, numerical modelling, experimental or field investigations, damage analysis, seismic vulnerability and retrofit. The precise doctoral topic and tasks will be agreed with the selected candidate and supervisory team.</p></div><strong>Deadline · 15 Oct</strong></aside>
     </div>
   </section>
 
