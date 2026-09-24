@@ -1,7 +1,7 @@
 <?php
 if (!defined('ABSPATH')) exit;
 get_header();
-$official_url = get_theme_mod('official_calls_url', 'https://www.grad.unizg.hr/novosti_i_objave/natjecaji?@=2b5wh#news_71010');
+$official_url = 'https://www.grad.unizg.hr/novosti_i_objave/natjecaji?@=2b5z6#news_71010';
 ?>
 <main id="main-content" class="positions-page" lang="en">
   <section class="positions-hero">
@@ -11,19 +11,19 @@ $official_url = get_theme_mod('official_calls_url', 'https://www.grad.unizg.hr/n
         <div>
           <span class="eyebrow">University of Zagreb · Croatia</span>
           <h1>Open research positions in the ZAGGREGATE project</h1>
-          <p class="positions-lead">The University of Zagreb Faculty of Civil Engineering is recruiting three doctoral researchers and two postdoctoral researchers to join the Croatian Centre for Earthquake Engineering and the international ZAGGREGATE team.</p>
+          <p class="positions-lead">The University of Zagreb Faculty of Civil Engineering is currently recruiting three doctoral researchers and one postdoctoral researcher to join the Croatian Centre for Earthquake Engineering and the international ZAGGREGATE team.</p>
           <div class="positions-hero-actions"><a class="btn btn-primary" href="#how-to-apply">How to apply ↓</a><a class="btn btn-secondary" target="_blank" rel="noopener" href="<?php echo esc_url($official_url); ?>">Official Croatian call ↗</a></div>
         </div>
         <div class="positions-keyfacts" aria-label="Key recruitment facts">
           <div><strong>3</strong><span>PhD positions</span><small>Deadline: 30 September 2026</small></div>
-          <div><strong>2</strong><span>Postdoctoral positions</span><small>Deadline: 10 September 2026</small></div>
+          <div><strong>1</strong><span>Postdoctoral position</span><small>Deadline: 15 October 2026</small></div>
           <div><strong>Zagreb</strong><span>Primary workplace</span><small>International research exchanges included</small></div>
         </div>
       </div>
     </div>
   </section>
 
-  <nav class="positions-page-nav" aria-label="Open positions page navigation"><div class="container"><a href="#overview">Start here</a><a href="#phd-positions">PhD positions <span>30 Sep</span></a><a href="#postdoc-positions">Postdoc positions <span>10 Sep</span></a><a href="#how-to-apply">How to apply</a><a href="#submit-application">Submit &amp; contact</a></div></nav>
+  <nav class="positions-page-nav" aria-label="Open positions page navigation"><div class="container"><a href="#overview">Start here</a><a href="#phd-positions">PhD positions <span>30 Sep</span></a><a href="#postdoc-positions">Postdoc position <span>15 Oct</span></a><a href="#how-to-apply">How to apply</a><a href="#submit-application">Submit &amp; contact</a></div></nav>
 
   <section class="positions-essentials" id="overview">
     <div class="container">
@@ -58,18 +58,17 @@ $official_url = get_theme_mod('official_calls_url', 'https://www.grad.unizg.hr/n
 
   <section class="section job-details postdoc-details" id="postdoc-positions">
     <div class="container">
-      <div class="job-group-head"><div><span class="eyebrow">Postdoctoral positions · University of Zagreb</span><h2>Project Associate 2 / Experienced Researcher - Postdoctoral Researcher</h2><p>Two experienced researchers will lead advanced project activities and support coordination, publication and doctoral research.</p></div><div class="deadline-card"><span>Application deadline</span><strong>10 September</strong><small>2026</small></div></div>
+      <div class="job-group-head"><div><span class="eyebrow">New postdoctoral call · University of Zagreb</span><h2>Project Associate 2 / Experienced Researcher - Postdoctoral Researcher</h2><p>One experienced researcher will contribute to assessment and retrofit guidance for historic masonry building aggregates and support the transfer of project results into engineering practice.</p></div><div class="deadline-card"><span>Application deadline</span><strong>15 October</strong><small>2026</small></div></div>
       <div class="job-columns">
         <article class="requirements-card"><h3>Required profile</h3><ul><li>A completed doctoral degree in civil engineering or a related technical field</li><li>Relevant experience in earthquake or structural engineering, masonry, numerical modelling, experiments and/or risk assessment</li><li>Demonstrated ability to conduct independent research</li><li>Experience writing and publishing scientific papers</li><li>Excellent spoken and written English</li><li>Ability to work independently and within an international research team</li><li>Willingness to learn and apply new methods, software tools and research approaches</li><li>Willingness to undertake a research stay outside Croatia for up to one year, at EPFL and/or another international partner institution</li></ul></article>
         <article class="requirements-card"><h3>Expected contribution</h3><ul><li>Independent research within the project’s thematic area</li><li>Laboratory, field and/or numerical research</li><li>Advanced masonry models and interpretation of experimental or field data</li><li>Assessment methods, damage indicators, vulnerability and retrofit recommendations</li><li>Coordination of research activities and support for doctoral researchers</li><li>Scientific publications and conference dissemination</li></ul></article>
       </div>
       <div class="position-offer"><strong>Contract and opportunities</strong><p>Fixed-term, full-time employment for up to three years, with the possibility of extension until the end of the project. The position offers an international and interdisciplinary research environment, collaboration with EPFL and other partners, research exchange, conferences, workshops and training, and opportunities to mentor doctoral candidates and students.</p></div>
-      <div class="profile-heading"><h3>Planned research profiles</h3><p>Applicants may indicate which profile best matches their expertise and interests.</p></div>
-      <div class="role-profiles role-profiles--two">
-        <article class="role-profile postdoctoral"><span>Postdoc 1</span><h4>In-situ testing and model calibration</h4><ul><li>NDT and operational modal analysis campaigns</li><li>Inter-building connection stiffness identification</li><li>Calibrated numerical models of individual units and aggregates</li><li>A FAIR, web-based repository for in-situ and laboratory data</li></ul></article>
-        <article class="role-profile postdoctoral"><span>Postdoc 2</span><h4>Vulnerability, fragility and seismic risk</h4><ul><li>Aggregate-specific vulnerability methodology</li><li>Fragility curves by position and configuration</li><li>Risk maps for unretrofitted and retrofitted aggregates</li><li>Risk-reduction indicators for retrofit strategies</li></ul></article>
+      <div class="profile-heading"><h3>Research focus</h3><p>The precise scope will be refined with the selected researcher and the project team.</p></div>
+      <div class="role-profiles">
+        <article class="role-profile postdoctoral"><span>Postdoc 3</span><h4>Assessment and retrofit guidance</h4><ul><li>Assessment and design guidelines</li><li>Case-study retrofit of a Zagreb building aggregate</li><li>Knowledge transfer and professional workshops</li><li>Dissemination and education for engineering practice</li></ul></article>
       </div>
-      <aside class="upcoming-call"><div><span>Additional opportunity</span><h3>Postdoc 3 · Assessment and retrofit guidance</h3><p>A separate call is expected to open in September 2026. The planned work includes assessment and design guidelines, a case-study retrofit of a Zagreb aggregate, and dissemination through knowledge transfer, workshops and professional education.</p></div><strong>Coming soon</strong></aside>
+      <aside class="upcoming-call open-call"><div><span>Applications open</span><h3>Apply for the new postdoctoral position by 15 October 2026</h3><p>Prepare one complete, signed PDF and follow the English application guidance below. The official Croatian announcement remains the legally authoritative source.</p></div><strong>Open now</strong></aside>
     </div>
   </section>
 

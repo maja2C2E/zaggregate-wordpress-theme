@@ -23,7 +23,7 @@ function zaggregate_customize_register($wp_customize) {
         'priority' => 30,
     ]);
     $fields = [
-        'official_calls_url' => ['Official calls URL', 'https://www.grad.unizg.hr/novosti_i_objave/natjecaji?@=2b5wh#news_71010', 'url'],
+        'official_calls_url' => ['Official calls URL', 'https://www.grad.unizg.hr/novosti_i_objave/natjecaji?@=2b5z6#news_71010', 'url'],
         'contact_email' => ['Project contact email', 'maja.banicek@grad.unizg.hr', 'email'],
         'hero_title' => ['Homepage statement', 'Rethinking seismic retrofit at the scale of the whole building row.', 'text'],
         'hero_intro' => ['Homepage introduction', 'ZAGGREGATE treats historic masonry rows as interacting structural systems. Field evidence, experiments and validated numerical models are combined to develop holistic, heritage-compatible strategies that reduce seismic risk across the entire aggregate—not only one building.', 'textarea'],
