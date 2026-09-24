@@ -1,7 +1,8 @@
 <?php
 if (!defined('ABSPATH')) exit;
 get_header();
-$official_url = 'https://www.grad.unizg.hr/novosti_i_objave/natjecaji?@=2b5z6#news_71010';
+$original_official_url = 'https://www.grad.unizg.hr/novosti_i_objave/natjecaji?@=2b5wh#news_71010';
+$new_official_url = 'https://www.grad.unizg.hr/novosti_i_objave/natjecaji?@=2b5z6#news_71010';
 ?>
 <main id="main-content" class="positions-page" lang="en">
   <section class="positions-hero">
@@ -12,7 +13,7 @@ $official_url = 'https://www.grad.unizg.hr/novosti_i_objave/natjecaji?@=2b5z6#ne
           <span class="eyebrow">University of Zagreb · Croatia</span>
           <h1>Open research positions in the ZAGGREGATE project</h1>
           <p class="positions-lead">The University of Zagreb Faculty of Civil Engineering is currently recruiting four doctoral researchers and one postdoctoral researcher for Postdoc 3. The new PhD 6 position focuses on damage-informed seismic assessment of historic masonry buildings under repeated earthquake actions.</p>
-          <div class="positions-hero-actions"><a class="btn btn-primary" href="#how-to-apply">How to apply ↓</a><a class="btn btn-secondary" target="_blank" rel="noopener" href="<?php echo esc_url($official_url); ?>">Official Croatian call ↗</a></div>
+          <div class="positions-hero-actions"><a class="btn btn-primary" href="#how-to-apply">How to apply ↓</a><a class="btn btn-secondary" target="_blank" rel="noopener" href="<?php echo esc_url($original_official_url); ?>">Official call · 30 Sep ↗</a><a class="btn btn-secondary" target="_blank" rel="noopener" href="<?php echo esc_url($new_official_url); ?>">Official call · 15 Oct ↗</a></div>
         </div>
         <div class="positions-keyfacts" aria-label="Key recruitment facts">
           <div><strong>4</strong><span>PhD positions</span><small>3 close 30 September · 1 closes 15 October</small></div>
@@ -34,7 +35,10 @@ $official_url = 'https://www.grad.unizg.hr/novosti_i_objave/natjecaji?@=2b5z6#ne
         <article><span>03</span><h3>Passport is sufficient</h3><p>A copy of your passport is accepted as proof of citizenship. Uncertified document copies may be submitted; originals are requested before appointment.</p></article>
         <article><span>04</span><h3>No Croatian HZMO record?</h3><p>If you have never been registered with the Croatian Pension Insurance Institute, state this clearly in your application.</p></article>
       </div>
-      <div class="official-notice"><div><strong>Unofficial English guide</strong><p>The selection committee assesses formal compliance and may request supplementary documents where appropriate.</p></div><p>The <a target="_blank" rel="noopener" href="<?php echo esc_url($official_url); ?>">official Croatian announcement</a> is legally authoritative and prevails in case of any discrepancy.</p></div>
+      <div class="official-notice">
+        <div><strong>Unofficial English guide</strong><p>The selection committee assesses formal compliance and may request supplementary documents where appropriate.</p></div>
+        <div><p>The relevant official Croatian announcement is legally authoritative and prevails in case of any discrepancy.</p><div class="official-call-links"><a target="_blank" rel="noopener" href="<?php echo esc_url($original_official_url); ?>"><span>Original call</span><strong>PhD 1, PhD 4 &amp; PhD 5</strong><small>Deadline: 30 September 2026 ↗</small></a><a target="_blank" rel="noopener" href="<?php echo esc_url($new_official_url); ?>"><span>New call</span><strong>PhD 6 &amp; Postdoc 3</strong><small>Deadline: 15 October 2026 ↗</small></a></div></div>
+      </div>
     </div>
   </section>
 
@@ -103,7 +107,7 @@ $official_url = 'https://www.grad.unizg.hr/novosti_i_objave/natjecaji?@=2b5z6#ne
       </div>
       <div class="application-submit-inline" id="submit-application">
         <div><span class="eyebrow">Submit your application</span><h2>Send one PDF to the Faculty Registry.</h2><p>Email the application to <a class="registry-email" href="mailto:pisarnica@grad.unizg.hr">pisarnica@grad.unizg.hr</a> and use the following subject line:</p><div class="application-subject"><span>Subject</span><strong>ZAGGREGATE application – [position] – [full name]</strong></div><p class="application-subject-note">Replace the bracketed text with the exact position and your full name.</p></div>
-        <div class="positions-submit-actions"><a class="btn btn-secondary" target="_blank" rel="noopener" href="<?php echo esc_url($official_url); ?>">Official Croatian call ↗</a><div class="positions-contact-person"><span>Contact person for position-related questions</span><strong>Maja Baniček</strong><a href="mailto:maja.banicek@grad.unizg.hr">maja.banicek@grad.unizg.hr</a></div></div>
+        <div class="positions-submit-actions"><a class="btn btn-secondary" target="_blank" rel="noopener" href="<?php echo esc_url($original_official_url); ?>">Official call · PhD 1, 4 &amp; 5 ↗</a><a class="btn btn-secondary" target="_blank" rel="noopener" href="<?php echo esc_url($new_official_url); ?>">Official call · PhD 6 &amp; Postdoc 3 ↗</a><div class="positions-contact-person"><span>Contact person for position-related questions</span><strong>Maja Baniček</strong><a href="mailto:maja.banicek@grad.unizg.hr">maja.banicek@grad.unizg.hr</a></div></div>
       </div>
     </div>
   </section>
