@@ -58,7 +58,7 @@ $new_official_url = 'https://www.grad.unizg.hr/novosti_i_objave/natjecaji?@=2b5z
         <article class="role-profile"><span>PhD 5</span><h4>Eurocode 8 and shake-table benchmarking</h4><ul><li>Half-scale shake-table test planning and execution</li><li>Blind prediction and post-diction benchmark</li><li>EC8 Part 3 evaluation and recommendations</li><li>An open shake-table dataset with processing scripts</li></ul><p class="role-profile-deadline">Application deadline: 30 September 2026</p></article>
       </div>
       <section class="additional-phd-profile" aria-labelledby="phd-6-title">
-        <div class="additional-phd-head"><div><span>Currently open · PhD 6 · Zagreb</span><h3 id="phd-6-title">Damage-informed seismic assessment of historic masonry buildings under repeated earthquake actions</h3><p><strong>Official position title:</strong> Project Associate 3 / Researcher - PhD Candidate.</p></div><div><strong>15 October</strong><span>Application deadline · 2026</span></div></div>
+        <div class="additional-phd-head"><div><div class="additional-phd-labels"><span>PhD 6</span><strong>Applications open · Zagreb</strong></div><h3 id="phd-6-title">Damage-informed seismic assessment of historic masonry buildings under repeated earthquake actions</h3><p><strong>Official position title:</strong> Project Associate 3 / Researcher - PhD Candidate.</p></div><div><strong>15 October</strong><span>Application deadline · 2026</span></div></div>
         <ul class="additional-phd-summary"><li>Simplified representation of observed earthquake damage</li><li>Residual seismic capacity after prior earthquake damage</li><li>Cumulative damage under earthquake sequences</li></ul>
       </section>
     </div>
