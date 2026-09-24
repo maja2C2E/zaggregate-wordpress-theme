@@ -13,7 +13,7 @@ $new_official_url = 'https://www.grad.unizg.hr/novosti_i_objave/natjecaji?@=2b5z
           <span class="eyebrow">University of Zagreb · Croatia</span>
           <h1>Open research positions in the ZAGGREGATE project</h1>
           <p class="positions-lead">The University of Zagreb Faculty of Civil Engineering is currently recruiting four doctoral researchers and one postdoctoral researcher for Postdoc 3. The new PhD 6 position focuses on damage-informed seismic assessment of historic masonry buildings under repeated earthquake actions.</p>
-          <div class="positions-hero-actions"><a class="btn btn-primary" href="#how-to-apply">How to apply ↓</a><a class="btn btn-secondary" target="_blank" rel="noopener" href="<?php echo esc_url($original_official_url); ?>">Official call · 30 Sep ↗</a><a class="btn btn-secondary" target="_blank" rel="noopener" href="<?php echo esc_url($new_official_url); ?>">Official call · 15 Oct ↗</a></div>
+          <div class="positions-hero-actions"><a class="btn btn-primary" href="#how-to-apply">How to apply ↓</a></div>
         </div>
         <div class="positions-keyfacts" aria-label="Key recruitment facts">
           <div><strong>4</strong><span>PhD positions</span><small>3 close 30 September · 1 closes 15 October</small></div>
